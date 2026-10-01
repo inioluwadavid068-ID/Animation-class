@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: box 10s;
+}
+
+@keyframes box {
+    
+    /* to{ */
+     /* transform: rotate(270deg); */
+     /* transform: translateY(1000px);
+     border: 5px solid red;
+    } */
+    
+    /* from{ */
+       /* transform: rotate(0deg); */
+       /* transform: translateX(1000px);
+       border:5px solid blue ;
+    } */
+    0%{
+        border: 20px solid red;
+    }
+    25%{
+        border: 20px solid green;
+        transform: translate(300px);
+    }
+    50%{
+        border: 20px solid blue;
+        transform: translate( 300px, 200px );
+
+    }
+    75%{
+        border: 20px solid purple;
+        transform: translate(-20px, 200px);
+    }
+    100%{
+        border: 20px solid pink;
+        transform: translate(-20px -20px);
+    }
+
+}
+
+.lorry{
+    transform: translate(-260px, 200px);
+    animation: motor 6s linear infinite forwards;
+}
+@keyframes motor {
+    0%{
+        transform: translate(-260px, 200px);
+        /* left: -300px; */
+        /* top: 200px; */
+    }
+
+    100%{
+        transform: translate(-260px, 200px);
+        /* left: 300px; */
+        /* top: 200px; */
+    }
+}
+
